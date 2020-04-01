@@ -29,7 +29,7 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) :
         val fragment: Fragment
 
         when(position) {
-            0 -> fragment = MoaiFragment.newInstance(1)
+            0 -> fragment = MoaiFragment.newInstance(12)
             1 -> fragment = MoaiListFragment.newInstance()
             2 -> fragment = SettingsFragment.newInstance()
             else -> fragment = PlaceholderFragment.newInstance(position + 1)

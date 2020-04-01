@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:background="@drawable/shape_border"
     android:orientation="vertical">
 
     <LinearLayout
@@ -9,23 +10,135 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <TextView
+        <CheckBox
             android:id="@+id/iconAttend"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_inactive_moai"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_icon_checked_moai"
+            android:button="@null"
+            android:checked="false"
+            android:padding="2dp"
             android:text="出"
-            android:textSize="18sp" />
+            android:textAlignment="center" />
+
+        <CheckBox
+            android:id="@+id/iconMoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_icon_checked_moai"
+            android:button="@null"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="￥"
+            android:textAlignment="center" />
+
+        <CheckBox
+            android:id="@+id/iconAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_icon_checked_moai"
+            android:button="@null"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="場"
+            android:textAlignment="center" />
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/iconPayment1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_icon_checked_moai"
+            android:button="@null"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="１"
+            android:textAlignment="center" />
+
+        <CheckBox
+            android:id="@+id/iconPayment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_icon_checked_moai"
+            android:button="@null"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="２"
+            android:textAlignment="center" />
+
+        <CheckBox
+            android:id="@+id/iconPayment3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_icon_checked_moai"
+            android:button="@null"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="３"
+            android:textAlignment="center" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/iconPayment4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_icon_checked_moai"
+            android:button="@null"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="４"
+            android:textAlignment="center" />
+
+        <CheckBox
+            android:id="@+id/iconPayment5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_icon_checked_moai"
+            android:button="@null"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="５"
+            android:textAlignment="center" />
+
+        <CheckBox
+            android:id="@+id/iconPayment6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_icon_checked_moai"
+            android:button="@null"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="６"
+            android:textAlignment="center" />
+    </LinearLayout>
 
 </LinearLayout>

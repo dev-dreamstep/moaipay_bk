@@ -41,6 +41,6 @@ class MainActivity : AppCompatActivity(), MoaiFragment.OnListFragmentInteraction
     }
 
     override fun onListFragmentInteraction(item: DummyContent.DummyItem?) {
-        TODO("Not yet implemented")
+
     }
 }
