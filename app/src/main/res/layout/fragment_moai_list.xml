@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/header"
+                android:name="com.dreamstep.moaipay.fragment.main.MoaiFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical"
+                app:layoutManager="LinearLayoutManager"
+                tools:context=".fragment.main.MoaiFragment"
+                tools:itemCount="1"
+                tools:listitem="@layout/fragment_moai" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/colheader"
+                android:name="com.dreamstep.moaipay.fragment.main.MoaiFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical"
+                app:layoutManager="LinearLayoutManager"
+                tools:context=".fragment.main.MoaiFragment"
+                tools:itemCount="1"
+                tools:listitem="@layout/fragment_moai" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rowHeader"
+                    android:name="com.dreamstep.moaipay.fragment.main.MoaiFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="vertical"
+                    app:layoutManager="LinearLayoutManager"
+                    tools:context=".fragment.main.MoaiFragment"
+                    tools:itemCount="20"
+                    tools:listitem="@layout/fragment_moai" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list"
+                    android:name="com.dreamstep.moaipay.fragment.main.MoaiFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="vertical"
+                    app:layoutManager="LinearLayoutManager"
+                    tools:context=".fragment.main.MoaiFragment"
+                    tools:itemCount="20"
+                    tools:listitem="@layout/fragment_moai" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</HorizontalScrollView>
+

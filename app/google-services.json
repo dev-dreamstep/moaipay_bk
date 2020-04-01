@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "552433331901",
+    "firebase_url": "https://moaipay.firebaseio.com",
+    "project_id": "moaipay",
+    "storage_bucket": "moaipay.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552433331901:android:93691910a56657480c11d4",
+        "android_client_info": {
+          "package_name": "com.dreamstep.moaipay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552433331901-t9n20gh929mabklpujacj833l86g2ri6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXkm5oNZZK02b29cIeDY-qF4AVfBxq7os"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552433331901-t9n20gh929mabklpujacj833l86g2ri6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
