@@ -28,15 +28,17 @@ class MainActivity : AppCompatActivity(), MoaiFragment.OnListFragmentInteraction
         val tabs: TabLayout = findViewById(R.id.tabs)
         tabs.setupWithViewPager(viewPager)
 
-        if (mAuth.currentUser == null) {
-            mAuth.currentUser?.let {
-                val intent = Intent(this, LoginActivity::class.java)
-                    .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
-                startActivity(intent)
-            }
-        } else {
-            MoaiPayGlobal.AuthUserId = mAuth.currentUser!!.uid
-        }
+//        if (mAuth.currentUser == null) {
+//            mAuth.currentUser?.let {
+//                val intent = Intent(this, LoginActivity::class.java)
+//                    .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+//                startActivity(intent)
+//            }
+//        } else {
+//            MoaiPayGlobal.AuthUserId = mAuth.currentUser!!.uid
+//        }
+        // 強制ログイン
+        MoaiPayGlobal.AuthUserId = "LQsQ02mSGqXPLormkljSmJI5gJ13"
 
     }
 
