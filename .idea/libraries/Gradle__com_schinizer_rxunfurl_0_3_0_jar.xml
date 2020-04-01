@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.schinizer:rxunfurl:0.3.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.schinizer/rxunfurl/0.3.0/adae3319f1cd8ee22fc45f0c9235ace372addd75/rxunfurl-0.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.schinizer/rxunfurl/0.3.0/99df33c97c0816925b1467e6ee851d47e2aec8bf/rxunfurl-0.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.schinizer/rxunfurl/0.3.0/3b051b64484fab3975ef7104dd15d839c7a193ef/rxunfurl-0.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
