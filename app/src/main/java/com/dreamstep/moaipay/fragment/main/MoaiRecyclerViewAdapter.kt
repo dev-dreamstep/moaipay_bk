@@ -42,11 +42,11 @@ class MoaiRecyclerViewAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = mValues[position]
-        holder.mIdView.text = item.id
-        holder.mContentView.text = item.content
-        holder.mContentView2.text = item.content
-        holder.mContentView3.text = item.content
-        holder.mContentView4.text = item.details
+//        holder.mIdView.text = item.id
+//        holder.mContentView.text = item.content
+//        holder.mContentView2.text = item.content
+//        holder.mContentView3.text = item.content
+//        holder.mContentView4.text = item.details
 
         with(holder.mView) {
             tag = item
@@ -57,14 +57,14 @@ class MoaiRecyclerViewAdapter(
     override fun getItemCount(): Int = mValues.size
 
     inner class ViewHolder(val mView: View) : RecyclerView.ViewHolder(mView) {
-        val mIdView: TextView = mView.item_number
-        val mContentView: TextView = mView.content
-        val mContentView2: TextView = mView.content2
-        val mContentView3: TextView = mView.content3
-        val mContentView4: TextView = mView.content4
+//        val mIdView: TextView = mView.item_number
+//        val mContentView: TextView = mView.content
+//        val mContentView2: TextView = mView.content2
+//        val mContentView3: TextView = mView.content3
+//        val mContentView4: TextView = mView.content4
 
         override fun toString(): String {
-            return super.toString() + " '" + mContentView.text + "'"
+            return super.toString() + " '" //+ mContentView.text + "'"
         }
     }
 }
