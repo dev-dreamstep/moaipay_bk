@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.dreamstep.moaipay.R
+import com.dreamstep.moaipay.fragment.chatroom.ChatroomFragment
 import com.dreamstep.moaipay.fragment.main.MoaiFragment
 import com.dreamstep.moaipay.fragment.moaiList.MoaiListFragment
 import com.dreamstep.moaipay.fragment.moaiList.PlaceholderFragment
@@ -31,7 +32,7 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) :
         when(position) {
             0 -> fragment = MoaiFragment.newInstance(1)
             1 -> fragment = MoaiListFragment.newInstance()
-            2 -> fragment = SettingsFragment.newInstance()
+            2 -> fragment = ChatroomFragment.newInstance()
             else -> fragment = PlaceholderFragment.newInstance(position + 1)
         }
         return fragment
