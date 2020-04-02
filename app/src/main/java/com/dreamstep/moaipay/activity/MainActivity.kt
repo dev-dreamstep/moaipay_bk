@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity(), MoaiFragment.OnListFragmentInteraction
         // 強制ログイン
         MoaiPayGlobal.AuthUserId = "LQsQ02mSGqXPLormkljSmJI5gJ13"
 
+
     }
 
     override fun onListFragmentInteraction(item: DummyContent.DummyItem?) {
