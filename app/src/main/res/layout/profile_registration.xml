@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:androidid="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.tutorial">
+
+    <TextView
+        android:id="@+id/txt_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#dcdcdc"
+        android:paddingStart="115dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="プロフィール登録"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidid:srcCompat="@drawable/btn_background_start" />
+
+    <EditText
+        android:id="@+id/edtxt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="名前" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/btn_background_profile"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:text="保存"
+        android:textColor="#ffffff" />
+
+</FrameLayout>

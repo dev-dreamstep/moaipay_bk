@@ -2,6 +2,7 @@ package com.dreamstep.moaipay.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.dreamstep.moaipay.R
@@ -14,6 +15,7 @@ import com.dreamstep.moaipay.utils.MoaiPayGlobal
 import com.google.android.material.tabs.TabLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import kotlinx.android.synthetic.main.item_mypage_settings.*
 
 class MainActivity : AppCompatActivity(), MoaiFragment.OnListFragmentInteractionListener {
 
@@ -29,7 +31,7 @@ class MainActivity : AppCompatActivity(), MoaiFragment.OnListFragmentInteraction
         tabs.setupWithViewPager(viewPager)
 
 //        if (mAuth.currentUser == null) {
-//            mAuth.currentUser?.let {
+//                mAuth.currentUser?.let {
 //                val intent = Intent(this, LoginActivity::class.java)
 //                    .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
 //                startActivity(intent)
@@ -39,7 +41,6 @@ class MainActivity : AppCompatActivity(), MoaiFragment.OnListFragmentInteraction
 //        }
         // 強制ログイン
         MoaiPayGlobal.AuthUserId = "LQsQ02mSGqXPLormkljSmJI5gJ13"
-
 
     }
 
