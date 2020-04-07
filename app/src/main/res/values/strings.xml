@@ -115,5 +115,16 @@
     </string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_start_tutorial">StartTutorialActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="next_tutorial">次へ</string>
+    <string name="regist_profile">プロフィール登録</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="skip_tutorial">スキップ</string>
+    <string name="profile_image">プロフィール写真</string>
 
 </resources>

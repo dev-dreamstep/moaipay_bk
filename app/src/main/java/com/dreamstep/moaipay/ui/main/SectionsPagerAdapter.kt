@@ -5,10 +5,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.dreamstep.moaipay.R
+import com.dreamstep.moaipay.fragment.dummy.DummyFragment
 import com.dreamstep.moaipay.fragment.main.MoaiFragment
 import com.dreamstep.moaipay.fragment.moaiList.MoaiListFragment
 import com.dreamstep.moaipay.fragment.moaiList.PlaceholderFragment
-import com.dreamstep.moaipay.fragment.mypage.SettingsFragment
 
 private val TAB_TITLES = arrayOf(
     R.string.tab_text_1,
@@ -31,7 +31,7 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) :
         when(position) {
             0 -> fragment = MoaiFragment.newInstance(12)
             1 -> fragment = MoaiListFragment.newInstance()
-            2 -> fragment = SettingsFragment.newInstance()
+            4 -> fragment = DummyFragment()
             else -> fragment = PlaceholderFragment.newInstance(position + 1)
         }
         return fragment
