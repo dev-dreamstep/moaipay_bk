@@ -119,12 +119,57 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="next_tutorial">次へ</string>
-    <string name="regist_profile">プロフィール登録</string>
+    <string name="next_tutorial">次へ\nNEXT</string>
+    <string name="regist_profile">始める\nSTART</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="skip_tutorial">スキップ</string>
+    <string name="skip_tutorial">スキップ\nSKIP</string>
     <string name="profile_image">プロフィール写真</string>
+    <string name="chat">チャット</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="tutorial_top_1">タップでらくらく入力</string>
+    <string name="tutorial_top_2">出欠状況もひと目でわかる</string>
+    <string name="tutorial_top_3">さらに、チャット機能付き！</string>
+    <string name="tutorial_bottom_1">面倒な手書きがタップで完了！\n顔写真付きなので記入時に間違える心配がなくなります！</string>
+    <string name="tutorial_bottom_2">人数が増えると管理が面倒だった出欠状況の確認もひと目でわかる！\nチャットと連動して返信も簡単。</string>
+    <string name="tutorial_bottom_3">チャット機能が付いているので、\nもあいの開催情報がすぐ送信できる！\n出欠確認の連絡も簡単！</string>
+    <string name="moai_create">もあいグループ作成</string>
+    <string name="back">戻る</string>
+    <string name="confirm">確認</string>
+    <string name="moai_image">グループ画像</string>
+    <string name="moai_name">もあい名</string>
+    <string name="please_input_moai_name">もあい名を入れてください</string>
+    <string name="administrator">管理者</string>
+    <string name="administrator2">管理者②</string>
+    <string name="administrator3">管理者③</string>
+    <string name="member">メンバー</string>
+    <string name="manual_input">手入力で追加する　＋</string>
+    <string name="select_input">連絡先から招待する　＞</string>
+    <string name="moai_amount">もあい代</string>
+    <string name="moai_extra">利息</string>
+    <string name="moai_payment">積立</string>
+    <string name="payment_name">積立名</string>
+    <string name="payment_price">積立単価</string>
+    <string name="payment_summary">積立合計</string>
+    <string name="pay_type">場代タイプ</string>
+    <string name="pay_type1">割り勘</string>
+    <string name="pay_type2">会費制</string>
+    <string name="pay_type3">親持ち</string>
 
 </resources>

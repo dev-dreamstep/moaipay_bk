@@ -5,10 +5,11 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.dreamstep.moaipay.R
+import com.dreamstep.moaipay.activity.MainActivity
 import com.dreamstep.moaipay.fragment.dummy.DummyFragment
 import com.dreamstep.moaipay.fragment.main.MoaiFragment
-import com.dreamstep.moaipay.fragment.moaiList.MoaiListFragment
-import com.dreamstep.moaipay.fragment.moaiList.PlaceholderFragment
+import com.dreamstep.moaipay.fragment.main.MoaiStartFragment
+import com.dreamstep.moaipay.interfaces.callback.MainTabCallback
 
 private val TAB_TITLES = arrayOf(
     R.string.tab_text_1,
@@ -25,15 +26,36 @@ private val TAB_TITLES = arrayOf(
 class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) :
     FragmentPagerAdapter(fm) {
 
+    var startFragment = MainActivity.StartFragment.MOAI_MAIN
+
     override fun getItem(position: Int): Fragment {
         val fragment: Fragment
+        val mainTab = context as MainTabCallback
 
         when(position) {
-            0 -> fragment = MoaiFragment.newInstance(12)
-            1 -> fragment = MoaiListFragment.newInstance()
-            4 -> fragment = DummyFragment()
-            else -> fragment = PlaceholderFragment.newInstance(position + 1)
+            0 -> {
+                fragment = MoaiFragment.newInstance()
+                mainTab.changeTitle("チャットルーム")
+            }
+            1 -> {
+                when (startFragment) {
+                    MainActivity.StartFragment.MOAI_START -> {
+                        fragment = MoaiStartFragment.newInstance()
+                        mainTab.changeTitle("もあいペイを始めよう")
+                    }
+                    else -> fragment = MoaiFragment.newInstance()
+                }
+            }
+            4 -> {
+                fragment = DummyFragment()
+                mainTab.changeTitle("チャットルーム")
+            }
+            else -> {
+                fragment = MoaiFragment.newInstance()
+                mainTab.changeTitle("もあいペイ")
+            }
         }
+
         return fragment
     }
 

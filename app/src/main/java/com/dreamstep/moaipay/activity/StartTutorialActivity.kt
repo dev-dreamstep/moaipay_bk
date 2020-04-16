@@ -1,6 +1,7 @@
 package com.dreamstep.moaipay.activity
 
 import android.content.Intent
+import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -58,17 +59,17 @@ class StartTutorialActivity : AppCompatActivity() {
 
     private fun changeCurrentPage(index: Int, changePage: Boolean = true) {
 
-        var indicatorImgRes = R.mipmap.tutorial1
+        var indicatorImgRes = R.mipmap.tutorial_navi1
         var buttonTextRes = R.string.next_tutorial
 
         when (index) {
             PAGE_INDEX_FIRST -> {
             }
             PAGE_INDEX_SECOND -> {
-                indicatorImgRes = R.mipmap.tutorial2
+                indicatorImgRes = R.mipmap.tutorial_navi2
             }
             PAGE_INDEX_LAST -> {
-                indicatorImgRes = R.mipmap.tutorial3
+                indicatorImgRes = R.mipmap.tutorial_navi3
                 buttonTextRes = R.string.regist_profile
             }
         }

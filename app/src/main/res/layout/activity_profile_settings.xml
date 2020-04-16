@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     android:orientation="vertical"
     tools:context=".activity.ProfileSettingsActivity">
 
@@ -27,19 +28,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <TextView
+        <ImageView
             android:id="@+id/btnIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_alignEnd="@id/icon_iv"
             android:layout_alignBottom="@id/icon_iv"
-            android:background="@android:color/black"
-            android:lines="2"
-            android:padding="3dp"
-            android:text="アイ\nコン"
-            android:textColor="@android:color/white"
-            android:textSize="12sp"
-            android:textStyle="bold" />
+            android:layout_alignParentEnd="false"
+            app:srcCompat="@mipmap/camera" />
+
     </RelativeLayout>
 
     <View
@@ -61,6 +58,7 @@
             android:paddingStart="20dp"
             android:paddingEnd="40dp"
             android:text="名前"
+            android:textColor="#3E3E3E"
             android:textSize="18sp" />
 
         <EditText
@@ -71,6 +69,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Name"
+            android:textColor="#3E3E3E"
             android:textSize="24sp" />
     </LinearLayout>
 

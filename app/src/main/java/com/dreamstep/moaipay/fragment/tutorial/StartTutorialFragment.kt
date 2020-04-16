@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.dreamstep.moaipay.R
+import com.dreamstep.moaipay.utils.ViewUtils
 import kotlinx.android.synthetic.main.fragment_start_tutorial.*
 
 private const val ARG_POSITION = "position"
@@ -35,9 +36,21 @@ class StartTutorialFragment : Fragment() {
     private fun setupTutorial() {
 
         when (position) {
-            0 -> back_iv.setImageResource(R.mipmap.moai)
-            1 -> back_iv.setImageResource(R.mipmap.moai2)
-            else -> back_iv.setImageResource(R.mipmap.moai3)
+            0 -> {
+                imgDisplay.setImageResource(R.mipmap.tutorial_display1)
+                ViewUtils.putText(lblTop, context!!.getString(R.string.tutorial_top_1))
+                ViewUtils.putText(lblBottom, context!!.getString(R.string.tutorial_bottom_1))
+            }
+            1 -> {
+                imgDisplay.setImageResource(R.mipmap.tutorial_display2)
+                ViewUtils.putText(lblTop, context!!.getString(R.string.tutorial_top_2))
+                ViewUtils.putText(lblBottom, context!!.getString(R.string.tutorial_bottom_2))
+            }
+            2 -> {
+                imgDisplay.setImageResource(R.mipmap.tutorial_display3)
+                ViewUtils.putText(lblTop, context!!.getString(R.string.tutorial_top_3))
+                ViewUtils.putText(lblBottom, context!!.getString(R.string.tutorial_bottom_3))
+            }
         }
     }
 

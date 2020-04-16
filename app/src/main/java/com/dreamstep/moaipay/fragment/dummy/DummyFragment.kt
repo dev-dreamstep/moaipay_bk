@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.dreamstep.moaipay.R
 import com.dreamstep.moaipay.fragment.dummy.dummy.DummyContent.DummyData
-import com.dreamstep.moaipay.fragment.main.MoaiFragment.Companion.ARG_COLUMN_COUNT
 import kotlinx.android.synthetic.main.fragment_dummy_list.*
 
 class DummyFragment : Fragment(), DummyPresenter.DummyListCallback {

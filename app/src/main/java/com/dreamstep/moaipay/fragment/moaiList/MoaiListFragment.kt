@@ -14,14 +14,15 @@ import com.dreamstep.moaipay.R
 import com.dreamstep.moaipay.data.model.MoaiGroup
 import com.dreamstep.moaipay.data.model.Users
 import com.dreamstep.moaipay.data.presenter.MoaiListPresenter
+import com.dreamstep.moaipay.interfaces.callback.MainTabCallback
 import com.dreamstep.moaipay.interfaces.callback.MoaiListCallback
 import com.dreamstep.moaipay.ui.moaiList.MoaiListAdapter
+import com.dreamstep.moaipay.utils.BaseFragment
 import com.dreamstep.moaipay.utils.MoaiPayGlobal
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.moai_list_fragment.*
 
-
-class MoaiListFragment : Fragment(), MoaiListCallback {
+class MoaiListFragment : BaseFragment(), MoaiListCallback {
 
     companion object {
         fun newInstance() = MoaiListFragment()

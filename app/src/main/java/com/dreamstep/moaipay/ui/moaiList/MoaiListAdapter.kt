@@ -93,17 +93,17 @@ class MoaiListAdapter(
             }
 
             if (moaiGroup.nextLocation != "") {
-                ViewUtils.putText(itemView.lblLocation, moaiGroup.nextLocation)
+                ViewUtils.putText(itemView.lblLocationUrl, moaiGroup.nextLocation)
             }
 
             if (moaiGroup.nextLocation != "") {
-                ViewUtils.putText(itemView.lblLocation, moaiGroup.nextLocation)
+                ViewUtils.putText(itemView.lblLocationUrl, moaiGroup.nextLocation)
             }
 
             ViewUtils.renderImage(moaiGroup.imageUrl, itemView.imageMoai, context)
 
             if (moaiGroup.nextUrl != "") {
-                itemView.lblLocation.setOnClickListener {
+                itemView.lblLocationUrl.setOnClickListener {
                     val uri = Uri.parse(moaiGroup.nextUrl)
                     val i = Intent(Intent.ACTION_VIEW, uri)
                     context.startActivity(i);
