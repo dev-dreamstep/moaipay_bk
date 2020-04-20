@@ -39,6 +39,10 @@
             android:name=".activity.StartTutorialActivity"
             android:label="@string/title_activity_start_tutorial">
         </activity>
+        <activity
+            android:name=".activity.MessengerActivity"
+            android:label="@string/title_activity_start_tutorial">
+        </activity>
 
         <service
             android:name=".utils.MoaiPayMessagingService"
