@@ -16,6 +16,7 @@ import com.google.android.material.tabs.TabLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.item_mypage_settings.*
+import kotlinx.android.synthetic.main.profile_registration_rt.*
 
 class MainActivity : AppCompatActivity(), MoaiFragment.OnListFragmentInteractionListener {
 
@@ -24,11 +25,12 @@ class MainActivity : AppCompatActivity(), MoaiFragment.OnListFragmentInteraction
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
+
+        /*val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
         val viewPager: ViewPager = findViewById(R.id.view_pager)
         viewPager.adapter = sectionsPagerAdapter
         val tabs: TabLayout = findViewById(R.id.tabs)
-        tabs.setupWithViewPager(viewPager)
+        tabs.setupWithViewPager(viewPager)*/
 
 //        if (mAuth.currentUser == null) {
 //                mAuth.currentUser?.let {
@@ -41,7 +43,6 @@ class MainActivity : AppCompatActivity(), MoaiFragment.OnListFragmentInteraction
 //        }
         // 強制ログイン
         MoaiPayGlobal.AuthUserId = "LQsQ02mSGqXPLormkljSmJI5gJ13"
-
     }
 
     override fun onListFragmentInteraction(item: DummyContent.DummyItem?) {

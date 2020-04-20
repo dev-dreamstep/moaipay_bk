@@ -20,11 +20,32 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <TextView
+        android:id="@+id/txt_picture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        androidid:srcCompat="@drawable/btn_background_start" />
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:text="プロフィール写真"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/dft_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/defaultIcon" />
+
+    <ImageButton
+        android:id="@+id/btn_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="110dp"
+        android:background="@drawable/imageCamera"/>
 
     <EditText
         android:id="@+id/edtxt_name"
@@ -33,18 +54,20 @@
         android:layout_marginTop="340dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="名前" />
+        android:hint="名前を入れてください" />
 
     <Button
         android:id="@+id/btn_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="400dp"
-        android:background="@drawable/btn_background_profile"
+        android:layout_marginTop="410dp"
         android:paddingStart="50dp"
         android:paddingEnd="50dp"
+        android:background="@drawable/btn_background_profile"
         android:text="保存"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 </FrameLayout>
