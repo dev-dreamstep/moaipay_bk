@@ -36,7 +36,11 @@ class MoaiFragment : BaseFragment() {
 
     private fun setOnClickListener() {
         btnMore.setOnClickListener {
-            layoutMore.visibility = View.VISIBLE
+            if (layoutMore.visibility != View.VISIBLE) {
+                layoutMore.visibility = View.VISIBLE
+            } else {
+                layoutMore.visibility = View.GONE
+            }
         }
     }
 

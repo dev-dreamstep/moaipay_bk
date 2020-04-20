@@ -1,4 +1,4 @@
-<resources>
+    <resources>
     <string name="app_name">MoaiPay</string>
     <string name="app_name_jp">もあいペイ</string>
     <!-- Strings related to login -->
