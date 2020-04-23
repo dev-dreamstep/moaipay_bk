@@ -11,11 +11,15 @@ import com.dreamstep.moaipay.fragment.chatroom.util.MessageDateComparator
 import com.dreamstep.moaipay.fragment.chatroom.util.TimeUtils
 import com.dreamstep.moaipay.fragment.dummy.DummyPresenter
 import com.dreamstep.moaipay.fragment.dummy.dummy.DummyContent
+import com.dreamstep.moaipay.utils.MoaiPayGlobal
+import com.google.firebase.Timestamp
 import com.google.firebase.firestore.DocumentChange
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ListenerRegistration
+import kotlinx.android.synthetic.main.message_view_left.view.*
 
 import java.lang.ref.WeakReference
+import java.text.SimpleDateFormat
 import java.util.*
 
 import kotlin.collections.ArrayList
@@ -300,23 +304,33 @@ class MessageView : ListView, View.OnFocusChangeListener {
     }
 
     private val firebaseDummyURL: String
-        get() = "dummy"
+        get() = "chatroom"
 
-    private val dummyHashMapTemplate
+    private val firebaseChatCollection: String
+        get() = "chat"
+
+    private val firebaseChatDoc: String
+        get() = MoaiPayGlobal.User!!.key!!.id
+
+    private val chatHashMapTemplate
         get() = hashMapOf<String, Any>(
-            "name" to ""
+            "content" to "",
+            "createData" to "",
+            "message" to "",
+            "moaiId" to "",
+            "senderAvatar" to "",
+            "senderId" to "",
+            "senderName" to "",
+            "type" to ""
         )
     private val firebaseDB = FirebaseFirestore.getInstance()
 
-    private val mView: DummyPresenter.DummyListCallback
-        get() {
-            TODO()
-        }
+
     var dummyListener: ListenerRegistration? = null
     val list = ArrayList<DummyContent.DummyData>()
 
     fun getData() {
-        val queryAccount = firebaseDB.collection("dummy")
+        val queryAccount = firebaseDB.collection("chatroom")
 
         dummyListener?.remove()
         dummyListener = queryAccount.addSnapshotListener { result, e ->
@@ -343,17 +357,24 @@ class MessageView : ListView, View.OnFocusChangeListener {
                     }
                 }
                 val sortedList = ArrayList(list.sortedByDescending { it.name })
-                mView.renderDummyList(sortedList)
+                //mView.renderDummyList(sortedList)
             }
         }
     }
 
     fun submitData(text: String){
 
-        val dummyHashMap = HashMap<String, Any>(dummyHashMapTemplate)
-        dummyHashMap["name"] = text
+        val chatHashMap = HashMap<String, Any>(chatHashMapTemplate)
+        chatHashMap["content"] = ""
+        chatHashMap["createData"] = Timestamp.now()
+        chatHashMap["message"] = text
+        chatHashMap["moaiId"] = MoaiPayGlobal.User!!.key!!.id
+        chatHashMap["senderAvatar"] = MoaiPayGlobal.User!!.avatar
+        chatHashMap["senderId"] = MoaiPayGlobal.User!!.userId
+        chatHashMap["senderName"] = MoaiPayGlobal.User!!.name
+        chatHashMap["type"] = ""
 
-        firebaseDB.collection(firebaseDummyURL).document().set(dummyHashMap)
+        firebaseDB.collection(firebaseDummyURL).document(firebaseChatDoc).collection(firebaseChatCollection).document().set(chatHashMap)
 
 //        mView.onTexMessageSent()
 

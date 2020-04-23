@@ -170,13 +170,13 @@ public class MessengerActivity extends Activity {
                         .build();
 
 //                //Set to chat view
-//                mChatView.send(message);
+                mChatView.send(message);
 //                //Add message list
 //                mMessageList.add(message);
 
 
                 //submitData(これやって)
-                mChatView.getMessageView().submitData("test");
+                mChatView.getMessageView().submitData(message.getText());
 
                 //Reset edit text
                 mChatView.setInputText("");
