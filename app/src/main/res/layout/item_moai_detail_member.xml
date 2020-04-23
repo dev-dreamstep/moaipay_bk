@@ -29,7 +29,7 @@
             android:textColor="#3E3E3E" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/iconInfo"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_below="@id/lblName"

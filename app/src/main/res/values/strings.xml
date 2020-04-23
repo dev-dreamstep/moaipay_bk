@@ -171,5 +171,7 @@
     <string name="pay_type1">割り勘</string>
     <string name="pay_type2">会費制</string>
     <string name="pay_type3">親持ち</string>
+        <string name="check_attend_key">attend</string>
+        <string name="check_recieve_moai_key">recieveMoai</string>
 
-</resources>
+    </resources>
