@@ -241,6 +241,8 @@ public class MessengerActivity extends Activity {
                     mChatView.receive(receivedMessage);
                     //Add message list
                     mMessageList.add(receivedMessage);
+
+                    mChatView.getMessageView().getData();
                 }
             }, mReplyDelay);
         }

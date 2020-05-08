@@ -4,6 +4,7 @@ import android.os.Handler
 import android.util.AttributeSet
 import android.view.View
 import android.widget.ListView
+import com.dreamstep.moaipay.data.model.Chat
 
 import com.dreamstep.moaipay.fragment.chatroom.model.Attribute
 import com.dreamstep.moaipay.fragment.chatroom.model.Message
@@ -325,12 +326,19 @@ class MessageView : ListView, View.OnFocusChangeListener {
         )
     private val firebaseDB = FirebaseFirestore.getInstance()
 
+    private val mView: ChatListCallback
+        get() {
+            TODO()
+        }
 
+    interface ChatListCallback {
+        fun renderChatList(chatList: ArrayList<Chat>)
+    }
     var dummyListener: ListenerRegistration? = null
-    val list = ArrayList<DummyContent.DummyData>()
+    val list = ArrayList<Chat>()
 
     fun getData() {
-        val queryAccount = firebaseDB.collection("chatroom")
+        val queryAccount = firebaseDB.collection(firebaseDummyURL).document(firebaseChatDoc).collection(firebaseChatCollection)
 
         dummyListener?.remove()
         dummyListener = queryAccount.addSnapshotListener { result, e ->
@@ -343,7 +351,7 @@ class MessageView : ListView, View.OnFocusChangeListener {
                 }
 
                 result.documentChanges.forEach { docChange ->
-                    val group = docChange.document.toObject(DummyContent.DummyData::class.java)
+                    val group = docChange.document.toObject(Chat::class.java)
                     group.key = docChange.document.reference
                     group.id = group.key!!.id
                     when (docChange.type) {
@@ -356,8 +364,8 @@ class MessageView : ListView, View.OnFocusChangeListener {
                         }
                     }
                 }
-                val sortedList = ArrayList(list.sortedByDescending { it.name })
-                //mView.renderDummyList(sortedList)
+                val sortedList = ArrayList(list.sortedByDescending { it.message })
+                mView.renderChatList(sortedList)
             }
         }
     }
