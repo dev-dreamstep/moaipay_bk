@@ -13,4 +13,9 @@
     <dimen name="moai_detail_row_header_width">80dp</dimen>
     <dimen name="moai_detail_col_widht">180dp</dimen>
     <dimen name="moai_detail_row_height">125dp</dimen>
+
+    <!-- もあい開催情報画面 -->
+    <dimen name="moai_info_col_header_height">71dp</dimen>
+    <dimen name="moai_info_row_header_width">91dp</dimen>
+    <dimen name="moai_info_col_widht">180dp</dimen>
 </resources>

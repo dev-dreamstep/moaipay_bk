@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_border"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/lblGotMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="false"
+            android:layout_centerVertical="true"
+            android:text="もあい受取"
+            android:textColor="@color/colorMoaiText" />
+
+        <LinearLayout
+            android:id="@+id/layoutIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            tools:visibility="visible">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iconGotMember1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:mipmap/sym_def_app_icon" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iconGotMember2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:src="@android:mipmap/sym_def_app_icon"
+                tools:visibility="visible" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iconGotMember3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:mipmap/sym_def_app_icon"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_alternating_row"
+        android:padding="10dp"
+        android:text="開催場所"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorMoaiText" />
+
+    <TextView
+        android:id="@+id/lblAttendNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_border"
+        android:padding="10dp"
+        android:text="参加人数"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorMoaiText" />
+
+    <TextView
+        android:id="@+id/lblGuestNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_alternating_row"
+        android:padding="10dp"
+        android:text="ゲスト"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorMoaiText" />
+
+    <TextView
+        android:id="@+id/lblPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_border"
+        android:padding="10dp"
+        android:text="場代"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorMoaiText" />
+
+    <TextView
+        android:id="@+id/lblPayment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_alternating_row"
+        android:padding="10dp"
+        android:text="積立１"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorMoaiText" />
+
+    <TextView
+        android:id="@+id/lblPayment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_border"
+        android:padding="10dp"
+        android:text="積立２"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorMoaiText" />
+</LinearLayout>

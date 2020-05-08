@@ -44,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginVertical="20dp"
-        android:background="?android:attr/listDivider" />
+        android:background="@color/colorMoaiGray" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,18 +58,19 @@
             android:paddingStart="20dp"
             android:paddingEnd="40dp"
             android:text="名前"
-            android:textColor="#3E3E3E"
+            android:textColor="@color/colorMoaiText"
             android:textSize="18sp" />
 
         <EditText
             android:id="@+id/txtName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Name"
-            android:textColor="#3E3E3E"
+            android:textColor="@color/colorMoaiText"
             android:textSize="24sp" />
     </LinearLayout>
 
@@ -78,7 +79,7 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginVertical="20dp"
-        android:background="?android:attr/listDivider" />
+        android:background="@color/colorMoaiGray" />
 
     <Button
         android:id="@+id/btnSaveProfile"

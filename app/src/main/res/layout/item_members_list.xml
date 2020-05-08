@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="7dp"
                 android:text="名前"
-                android:textColor="#3E3E3E"
+                android:textColor="@color/colorMoaiText"
                 android:textSize="18sp" />
 
             <TextView
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="7dp"
                 android:text="口数"
-                android:textColor="#3E3E3E"
+                android:textColor="@color/colorMoaiText"
                 android:textSize="18sp" />
 
             <Spinner
@@ -76,6 +76,6 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginVertical="10dp"
-        android:background="?android:attr/listDivider" />
+        android:background="@color/colorMoaiGray" />
 
 </LinearLayout>

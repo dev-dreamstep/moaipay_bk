@@ -7,7 +7,7 @@
     android:background="@android:color/white"
     android:clipChildren="true"
     android:clipToPadding="true"
-    tools:context=".activity.MoaiRegistActivity">
+    tools:context=".activity.moai.group.MoaiRegistActivity">
 
     <FrameLayout
         android:id="@+id/barHeader"
@@ -77,7 +77,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/moai_image"
-                        android:textColor="#3E3E3E"
+                        android:textColor="@color/colorMoaiText"
                         android:textSize="18sp" />
 
                     <ImageView
@@ -110,7 +110,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="10dp"
-                android:background="?android:attr/listDivider" />
+                android:background="@color/colorMoaiGray" />
 
             <LinearLayout
                 android:id="@+id/containerName"
@@ -122,7 +122,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/moai_name"
-                    android:textColor="#3E3E3E"
+                    android:textColor="@color/colorMoaiText"
                     android:textSize="18sp" />
 
                 <EditText
@@ -133,14 +133,14 @@
                     android:ems="10"
                     android:hint="@string/please_input_moai_name"
                     android:inputType="textPersonName"
-                    android:textColor="#3E3E3E" />
+                    android:textColor="@color/colorMoaiText" />
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="10dp"
-                android:background="?android:attr/listDivider" />
+                android:background="@color/colorMoaiGray" />
 
             <LinearLayout
                 android:id="@+id/containerAdmin"
@@ -152,7 +152,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/administrator"
-                    android:textColor="#3E3E3E"
+                    android:textColor="@color/colorMoaiText"
                     android:textSize="18sp" />
 
                 <Spinner
@@ -164,7 +164,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginVertical="10dp"
-                    android:background="?android:attr/listDivider" />
+                    android:background="@color/colorMoaiGray" />
 
                 <LinearLayout
                     android:id="@+id/containerAdmin"
@@ -176,7 +176,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/administrator2"
-                        android:textColor="#3E3E3E"
+                        android:textColor="@color/colorMoaiText"
                         android:textSize="18sp" />
 
                     <Spinner
@@ -188,13 +188,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginVertical="10dp"
-                        android:background="?android:attr/listDivider" />
+                        android:background="@color/colorMoaiGray" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/administrator3"
-                        android:textColor="#3E3E3E"
+                        android:textColor="@color/colorMoaiText"
                         android:textSize="18sp" />
 
                     <Spinner
@@ -208,7 +208,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="10dp"
-                android:background="?android:attr/listDivider" />
+                android:background="@color/colorMoaiGray" />
 
             <LinearLayout
                 android:id="@+id/containerMembers"
@@ -220,7 +220,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/member"
-                    android:textColor="#3E3E3E"
+                    android:textColor="@color/colorMoaiText"
                     android:textSize="18sp" />
 
                 <include
@@ -253,7 +253,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="10dp"
-                android:background="?android:attr/listDivider" />
+                android:background="@color/colorMoaiGray" />
 
             <LinearLayout
                 android:id="@+id/containerAmount"
@@ -265,7 +265,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/moai_amount"
-                    android:textColor="#3E3E3E"
+                    android:textColor="@color/colorMoaiText"
                     android:textSize="18sp" />
 
                 <EditText
@@ -280,7 +280,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/moai_extra"
-                    android:textColor="#3E3E3E"
+                    android:textColor="@color/colorMoaiText"
                     android:textSize="18sp" />
 
                 <EditText
@@ -290,14 +290,14 @@
                     android:ems="10"
                     android:hint="1,000"
                     android:inputType="numberDecimal"
-                    android:textColor="#3E3E3E" />
+                    android:textColor="@color/colorMoaiText" />
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="10dp"
-                android:background="?android:attr/listDivider" />
+                android:background="@color/colorMoaiGray" />
 
             <LinearLayout
                 android:id="@+id/containerPayment"
@@ -309,7 +309,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/moai_payment"
-                    android:textColor="#3E3E3E"
+                    android:textColor="@color/colorMoaiText"
                     android:textSize="18sp" />
 
                 <LinearLayout
@@ -328,7 +328,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="15dp"
                             android:text="@string/payment_name"
-                            android:textColor="#3E3E3E"
+                            android:textColor="@color/colorMoaiText"
                             android:textSize="18sp" />
 
                         <EditText
@@ -350,7 +350,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="15dp"
                             android:text="@string/payment_price"
-                            android:textColor="#3E3E3E"
+                            android:textColor="@color/colorMoaiText"
                             android:textSize="18sp" />
 
                         <EditText
@@ -372,7 +372,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="15dp"
                             android:text="@string/payment_summary"
-                            android:textColor="#3E3E3E"
+                            android:textColor="@color/colorMoaiText"
                             android:textSize="18sp" />
 
                         <EditText
@@ -401,7 +401,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="10dp"
-                android:background="?android:attr/listDivider" />
+                android:background="@color/colorMoaiGray" />
 
             <LinearLayout
                 android:id="@+id/containerPayType"
@@ -413,7 +413,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/pay_type"
-                    android:textColor="#3E3E3E"
+                    android:textColor="@color/colorMoaiText"
                     android:textSize="18sp" />
 
                 <LinearLayout
@@ -429,7 +429,7 @@
                         android:layout_marginStart="15dp"
                         android:layout_weight="1"
                         android:text="@string/pay_type1"
-                        android:textColor="#3E3E3E"
+                        android:textColor="@color/colorMoaiText"
                         android:textSize="18sp" />
 
                     <RadioButton
@@ -454,7 +454,7 @@
                         android:layout_marginStart="15dp"
                         android:layout_weight="1"
                         android:text="@string/pay_type2"
-                        android:textColor="#3E3E3E"
+                        android:textColor="@color/colorMoaiText"
                         android:textSize="18sp" />
 
                     <RadioButton
@@ -479,7 +479,7 @@
                         android:layout_marginStart="15dp"
                         android:layout_weight="1"
                         android:text="@string/pay_type3"
-                        android:textColor="#3E3E3E"
+                        android:textColor="@color/colorMoaiText"
                         android:textSize="18sp" />
 
                     <RadioButton
@@ -494,7 +494,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="会費（出席者）"
-                    android:textColor="#3E3E3E"
+                    android:textColor="@color/colorMoaiText"
                     android:textSize="18sp" />
 
                 <EditText
@@ -504,14 +504,14 @@
                     android:layout_marginStart="15dp"
                     android:ems="10"
                     android:hint="10,000"
-                    android:textColor="#3E3E3E"
+                    android:textColor="@color/colorMoaiText"
                     android:inputType="numberDecimal" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="会費（欠席者）"
-                    android:textColor="#3E3E3E"
+                    android:textColor="@color/colorMoaiText"
                     android:textSize="18sp" />
 
                 <EditText
@@ -521,7 +521,7 @@
                     android:layout_marginStart="15dp"
                     android:ems="10"
                     android:hint="5,000"
-                    android:textColor="#3E3E3E"
+                    android:textColor="@color/colorMoaiText"
                     android:inputType="numberDecimal" />
 
             </LinearLayout>

@@ -8,9 +8,12 @@ import android.util.Log
 import androidx.viewpager.widget.ViewPager
 import com.dreamstep.moaipay.R
 import com.dreamstep.moaipay.ui.tutorial.*
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_start_tutorial.*
 
 class StartTutorialActivity : AppCompatActivity() {
+
+    private var mAuth = FirebaseAuth.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,9 +44,17 @@ class StartTutorialActivity : AppCompatActivity() {
             view_pager.run {
                 when (currentItem) {
                     PAGE_INDEX_LAST -> {
-                        val intent = Intent(this@StartTutorialActivity, ProfileSettingsActivity::class.java)
-                        startActivity(intent)
-                        finish()
+//                        if (mAuth.currentUser == null) {
+//                            mAuth.currentUser?.let {
+                                val intent = Intent(this@StartTutorialActivity, LoginActivity::class.java)
+                                startActivity(intent)
+                                finish()
+//                            }
+//                        } else {
+//                            val intent = Intent(this@StartTutorialActivity, ProfileSettingsActivity::class.java)
+//                            startActivity(intent)
+//                            finish()
+//                        }
                     }
                     else -> changeCurrentPage(currentItem + 1, true)
                 }
@@ -51,9 +62,17 @@ class StartTutorialActivity : AppCompatActivity() {
         }
 
         skip_tv.setOnClickListener {
-            val intent = Intent(this@StartTutorialActivity, ProfileSettingsActivity::class.java)
-            startActivity(intent)
-            finish()
+            if (mAuth.currentUser == null) {
+                mAuth.currentUser?.let {
+                    val intent = Intent(this@StartTutorialActivity, LoginActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                }
+            } else {
+                val intent = Intent(this@StartTutorialActivity, ProfileSettingsActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
         }
     }
 

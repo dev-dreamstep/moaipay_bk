@@ -6,11 +6,11 @@
         android:id="@+id/txtHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#E0E0E0"
+        android:background="@color/colorMoaiGray"
         android:paddingVertical="5dp"
         android:paddingStart="20dp"
         android:text="索引"
-        android:textColor="#3E3E3E"
+        android:textColor="@color/colorMoaiText"
         android:textSize="18sp"
         android:textStyle="bold" />
 </RelativeLayout>

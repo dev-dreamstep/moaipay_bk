@@ -8,10 +8,10 @@
 
     <ImageView
         android:id="@+id/tab_ic_iv"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
-        android:src="@android:drawable/ic_menu_myplaces" />
+        android:src="@mipmap/mypage_icon" />
 
     <TextView
         android:id="@+id/tab_label_tv"
@@ -19,5 +19,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="マイページ"
-        android:textColor="@color/colorBeer" />
+        android:textColor="@color/colorBeerDark" />
 </LinearLayout>

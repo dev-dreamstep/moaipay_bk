@@ -4,7 +4,7 @@
 <item android:state_checked="false">
     <shape android:shape="oval">
 
-        <solid android:color="#E0E0E0" />
+        <solid android:color="@color/colorMoaiGray" />
 
         <size
             android:width="40dp"

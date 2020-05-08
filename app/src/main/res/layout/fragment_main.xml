@@ -19,17 +19,18 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="210dp"
                     android:scaleType="centerCrop"
                     android:src="@mipmap/moai" />
 
@@ -51,7 +52,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="5月22日（金）"
-                            android:textColor="#3E3E3E"
+                            android:textColor="@color/colorMoaiText"
                             android:textSize="30sp" />
 
                         <LinearLayout
@@ -70,7 +71,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="開催時間"
-                                    android:textColor="#3E3E3E"
+                                    android:textColor="@color/colorMoaiText"
                                     android:textSize="18sp" />
 
                                 <TextView
@@ -80,7 +81,7 @@
                                     android:layout_below="@id/lblTimeTitle"
                                     android:layout_gravity="bottom"
                                     android:text="19:00 〜"
-                                    android:textColor="#3E3E3E"
+                                    android:textColor="@color/colorMoaiText"
                                     android:textSize="24sp" />
                             </RelativeLayout>
 
@@ -94,17 +95,17 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="開催場所"
-                                    android:textColor="#3E3E3E"
+                                    android:textColor="@color/colorMoaiText"
                                     android:textSize="18sp" />
 
                                 <TextView
-                                    android:id="@+id/lblLocationUrl"
+                                    android:id="@+id/lblLocation"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_below="@id/lblLocationTitle"
                                     android:layout_gravity="bottom"
                                     android:text="那覇市"
-                                    android:textColor="#3E3E3E"
+                                    android:textColor="@color/colorMoaiText"
                                     android:textSize="24sp" />
                             </RelativeLayout>
 
@@ -137,7 +138,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
-                            tools:visibility="gone">
+                            tools:visibility="visible">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -173,14 +174,14 @@
                                             android:layout_gravity="center"
                                             android:paddingHorizontal="5dp"
                                             android:text="✔️"
-                                            android:textColor="#3E3E3E" />
+                                            android:textColor="@color/colorMoaiText" />
 
                                         <TextView
                                             android:id="@+id/txtAttendText"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="参加"
-                                            android:textColor="#3E3E3E"
+                                            android:textColor="@color/colorMoaiText"
                                             android:textSize="18sp" />
                                     </LinearLayout>
 
@@ -192,7 +193,7 @@
                                         android:layout_centerHorizontal="true"
                                         android:layout_marginTop="10dp"
                                         android:text="10人"
-                                        android:textColor="#3E3E3E"
+                                        android:textColor="@color/colorMoaiText"
                                         android:textSize="18sp" />
 
                                 </RelativeLayout>
@@ -227,7 +228,7 @@
                                             android:layout_gravity="center"
                                             android:paddingHorizontal="5dp"
                                             android:text="×"
-                                            android:textColor="#3E3E3E"
+                                            android:textColor="@color/colorMoaiText"
                                             android:textSize="18sp"
                                             android:textStyle="bold" />
 
@@ -236,7 +237,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="不参加"
-                                            android:textColor="#3E3E3E"
+                                            android:textColor="@color/colorMoaiText"
                                             android:textSize="18sp" />
                                     </LinearLayout>
 
@@ -248,7 +249,7 @@
                                         android:layout_centerHorizontal="true"
                                         android:layout_marginTop="10dp"
                                         android:text="2人"
-                                        android:textColor="#3E3E3E"
+                                        android:textColor="@color/colorMoaiText"
                                         android:textSize="18sp" />
 
                                 </RelativeLayout>
@@ -282,7 +283,7 @@
                                             android:layout_gravity="center"
                                             android:paddingHorizontal="5dp"
                                             android:text="  ？"
-                                            android:textColor="#3E3E3E"
+                                            android:textColor="@color/colorMoaiText"
                                             android:textSize="18sp" />
 
                                         <TextView
@@ -290,7 +291,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="未定"
-                                            android:textColor="#3E3E3E"
+                                            android:textColor="@color/colorMoaiText"
                                             android:textSize="18sp" />
                                     </LinearLayout>
 
@@ -302,7 +303,7 @@
                                         android:layout_centerHorizontal="true"
                                         android:layout_marginTop="10dp"
                                         android:text="1人"
-                                        android:textColor="#3E3E3E"
+                                        android:textColor="@color/colorMoaiText"
                                         android:textSize="18sp" />
 
                                 </RelativeLayout>
@@ -312,7 +313,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
                                 android:layout_marginVertical="10dp"
-                                android:background="?android:attr/listDivider" />
+                                android:background="@color/colorMoaiGray" />
 
                             <LinearLayout
                                 android:id="@+id/layoutAttend"
@@ -389,35 +390,38 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
                                 android:layout_marginVertical="10dp"
-                                android:background="?android:attr/listDivider" />
+                                android:background="@color/colorMoaiGray" />
 
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
                                 <TextView
-                                    android:id="@+id/lblLocation"
+                                    android:id="@+id/textView3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="店舗URL"
                                     android:textColor="@android:color/black"
-                                    android:textSize="18sp" />
+                                    android:textSize="18sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
 
                                 <TextView
                                     android:id="@+id/lblLocationUrl"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="http://itmail-okinawa.co.jp"
-                                    android:textColor="#3E3E3E"
+                                    android:textColor="@color/colorMoaiText"
                                     android:textSize="18sp"
-                                    app:layout_constraintTop_toBottomOf="@id/lblLocation" />
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
                             </androidx.constraintlayout.widget.ConstraintLayout>
 
                             <View
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
                                 android:layout_marginVertical="10dp"
-                                android:background="?android:attr/listDivider" />
+                                android:background="@color/colorMoaiGray" />
 
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
@@ -427,17 +431,20 @@
                                     android:id="@+id/lblComment"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="コメント"
+                                    android:text="@string/moai_comment"
                                     android:textColor="@android:color/black"
-                                    android:textSize="18sp" />
+                                    android:textSize="18sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
 
                                 <TextView
                                     android:id="@+id/lblLocationText"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="itmail-okinawa"
-                                    android:textColor="#3E3E3E"
+                                    android:textColor="@color/colorMoaiText"
                                     android:textSize="18sp"
+                                    app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toBottomOf="@id/lblComment" />
                             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -447,118 +454,14 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:background="@drawable/bg_moai_earliest"
-                    android:orientation="vertical"
-                    android:padding="20dp">
+                <include
+                    layout="@layout/layout_moai_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp"
+                    android:layout_margin="5dp" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/btnTermPrev"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="＜"
-                            android:textColor="#3E3E3E"
-                            android:textSize="18sp" />
-
-                        <TextView
-                            android:id="@+id/lblTerm"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="1期目　2020年3月1日〜"
-                            android:textAlignment="center"
-                            android:textColor="@android:color/black"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/btnTermNext"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="＞"
-                            android:textColor="#3E3E3E"
-                            android:textSize="18sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:paddingVertical="10dp">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:id="@+id/tabDetail"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="参加情報"
-                                android:textAlignment="center"
-                                android:textColor="#3E3E3E"
-                                android:textSize="18sp"
-                                android:textStyle="bold"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <View
-                                android:id="@+id/lineDetail"
-                                android:layout_width="match_parent"
-                                android:layout_height="1dp"
-                                android:layout_marginVertical="5dp"
-                                android:background="@color/colorBeerDark"
-                                app:layout_constraintTop_toBottomOf="@id/tabDetail" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:id="@+id/tabInfomation"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="開催情報"
-                                android:textAlignment="center"
-                                android:textColor="#E0E0E0"
-                                android:textSize="18sp"
-                                android:textStyle="bold"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <View
-                                android:id="@+id/lineInfomation"
-                                android:layout_width="match_parent"
-                                android:layout_height="1dp"
-                                android:layout_marginVertical="5dp"
-                                android:background="@android:color/darker_gray"
-                                app:layout_constraintTop_toBottomOf="@id/tabInfomation" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <androidx.viewpager.widget.ViewPager
-                    android:id="@+id/moaiPager"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    tools:layout_editor_absoluteX="25dp"
-                    tools:layout_editor_absoluteY="496dp" />
             </LinearLayout>
+
         </ScrollView>
 
         <HorizontalScrollView
@@ -582,7 +485,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="出席"
-                        android:textColor="#3E3E3E"
+                        android:textColor="@color/colorMoaiText"
                         android:textSize="18sp" />
 
                     <TextView
@@ -591,7 +494,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/lblMemberNum"
                         android:text="13人"
-                        android:textColor="#3E3E3E"
+                        android:textColor="@color/colorMoaiText"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -606,7 +509,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="模合"
-                        android:textColor="#3E3E3E"
+                        android:textColor="@color/colorMoaiText"
                         android:textSize="18sp" />
 
                     <TextView
@@ -615,7 +518,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/lblMoaiSum"
                         android:text="100,000"
-                        android:textColor="#3E3E3E"
+                        android:textColor="@color/colorMoaiText"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -630,7 +533,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="場代"
-                        android:textColor="#3E3E3E"
+                        android:textColor="@color/colorMoaiText"
                         android:textSize="18sp" />
 
                     <TextView
@@ -639,7 +542,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/lblPriceSum"
                         android:text="50,000"
-                        android:textColor="#3E3E3E"
+                        android:textColor="@color/colorMoaiText"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -663,7 +566,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/lblBill"
                         android:text="42,920"
-                        android:textColor="#3E3E3E"
+                        android:textColor="@color/colorMoaiText"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -687,12 +590,518 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/lblChange"
                         android:text="7,080"
-                        android:textColor="#3E3E3E"
+                        android:textColor="@color/colorMoaiText"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
             </LinearLayout>
         </HorizontalScrollView>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutPopup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BE000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/layoutPopupAttend"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_popup"
+            tools:visibility="gone">
+
+            <TextView
+                android:id="@+id/btnCloseAttend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:text="×"
+                android:textColor="@color/colorMoaiText"
+                android:textSize="36sp" />
+
+            <LinearLayout
+                android:id="@+id/layoutUserAttend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    tools:src="@android:mipmap/sym_def_app_icon" />
+
+                <TextView
+                    android:id="@+id/lblNameAttend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:text="沖縄　花子"
+                    android:textColor="@color/colorMoaiText"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/dividerAttend"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/layoutUserAttend"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="30dp"
+                android:background="@color/colorMoaiGray" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dividerAttend"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_moai_detail_payment">
+
+                    <LinearLayout
+                        android:id="@+id/btnAbsentAttend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/batu_mark" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:text="不参加"
+                            android:textColor="@color/colorMoaiText"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/btn_moai_detail_payment">
+
+                    <LinearLayout
+                        android:id="@+id/btnNoAnsAttend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/question_mark" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:text="未定"
+                            android:textColor="@color/colorMoaiText"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutPopupAbsent"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_popup"
+            tools:visibility="gone">
+
+            <TextView
+                android:id="@+id/btnCloseAbsent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:text="×"
+                android:textColor="@color/colorMoaiText"
+                android:textSize="36sp" />
+
+            <LinearLayout
+                android:id="@+id/layoutUserAbsent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    tools:src="@android:mipmap/sym_def_app_icon" />
+
+                <TextView
+                    android:id="@+id/lblNameAbsent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:text="沖縄　花子"
+                    android:textColor="@color/colorMoaiText"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/dividerAbsent"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/layoutUserAbsent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="30dp"
+                android:background="@color/colorMoaiGray" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dividerAbsent"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_moai_detail_payment">
+
+                    <LinearLayout
+                        android:id="@+id/btnAttendPopup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/check_mark" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:text="参加"
+                            android:textColor="@color/colorMoaiText"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/btn_moai_detail_payment">
+
+                    <LinearLayout
+                        android:id="@+id/btnNoAnsPopup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/question_mark" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:text="未定"
+                            android:textColor="@color/colorMoaiText"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutPopupNoAns"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_popup"
+            tools:visibility="gone">
+
+            <TextView
+                android:id="@+id/btnCloseNoAns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:text="×"
+                android:textColor="@color/colorMoaiText"
+                android:textSize="36sp" />
+
+            <LinearLayout
+                android:id="@+id/layoutUserNoAns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    tools:src="@android:mipmap/sym_def_app_icon" />
+
+                <TextView
+                    android:id="@+id/lblNameNoAns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:text="沖縄　花子"
+                    android:textColor="@color/colorMoaiText"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/dividerNoAns"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/layoutUserNoAns"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="30dp"
+                android:background="@color/colorMoaiGray" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dividerNoAns"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_moai_detail_payment">
+
+                    <LinearLayout
+                        android:id="@+id/btnAttendNoAns"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/check_mark" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:text="参加"
+                            android:textColor="@color/colorMoaiText"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/btn_moai_detail_payment">
+
+                    <LinearLayout
+                        android:id="@+id/btnAbsentNoAns"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/batu_mark" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:text="不参加"
+                            android:textColor="@color/colorMoaiText"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutApproval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_popup">
+
+            <TextView
+                android:id="@+id/lblMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="新しいグループからの招待があります"
+                android:textColor="@color/colorMoaiText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lblMoaiName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="もあい名"
+                android:textColor="@color/colorMoaiText"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblMessage" />
+
+            <ImageView
+                android:id="@+id/imgMoai"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/moai"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblMoaiName" />
+
+            <LinearLayout
+                android:id="@+id/btnMorePopup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgMoai">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="メンバーを見る"
+                    android:textColor="#6E828D" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="∨"
+                    android:textColor="@color/colorBeerDark"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerMembers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/btnMorePopup"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_popup_members_list"
+                tools:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layoutButtons"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recyclerMembers">
+
+                <Button
+                    android:id="@+id/btnApprove"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorBeerDark"
+                    android:text="承認する"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btnDismis"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:text="拒否する"
+                    android:textColor="#A7A7A7"
+                    android:textStyle="bold"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </FrameLayout>
 

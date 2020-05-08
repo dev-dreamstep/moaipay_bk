@@ -13,7 +13,7 @@
         android:layout_gravity="bottom"
         android:layout_marginBottom="5dp"
         android:text="親"
-        android:textColor="#3E3E3E" />
+        android:textColor="@color/colorMoaiText" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="46dp"
@@ -32,7 +32,7 @@
             android:layout_margin="6dp"
             android:text="99/99"
             android:textAlignment="center"
-            android:textColor="#3E3E3E" />
+            android:textColor="@color/colorMoaiText" />
 
         <TextView
             android:id="@+id/lblNum"
@@ -42,17 +42,17 @@
             android:layout_toEndOf="@id/lblDate"
             android:text="99回目"
             android:textAlignment="center"
-            android:textColor="#3E3E3E" />
+            android:textColor="@color/colorMoaiText" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnInputEvent"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:layout_below="@id/lblDate"
             android:layout_centerHorizontal="true"
             android:background="@drawable/btn_add_member"
             android:text="開催日編集"
-            android:textColor="#3E3E3E" />
+            android:textColor="@color/colorMoaiText" />
     </RelativeLayout>
 
 </LinearLayout>

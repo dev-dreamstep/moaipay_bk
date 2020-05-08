@@ -1,5 +1,5 @@
-    <resources>
-    <string name="app_name">MoaiPay</string>
+<resources>
+    <string name="app_name">moaiPay</string>
     <string name="app_name_jp">もあいペイ</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -171,7 +171,17 @@
     <string name="pay_type1">割り勘</string>
     <string name="pay_type2">会費制</string>
     <string name="pay_type3">親持ち</string>
-        <string name="check_attend_key">attend</string>
-        <string name="check_recieve_moai_key">recieveMoai</string>
+    <string name="check_attend_key">attend</string>
+    <string name="check_recieve_moai_key">recieveMoai</string>
+    <string name="title_activity_moai_detail_regist">MoaiDetailRegistActivity</string>
+    <string name="save">完了</string>
+    <string name="moai_parent">幹事</string>
+    <string name="event_date">開催日</string>
+    <string name="event_start_time">開催時間</string>
+    <string name="moai_place">開催場所</string>
+    <string name="place_url">店舗（地図）URL</string>
+    <string name="moai_comment_placeholder">開催場所などの補足情報</string>
+    <string name="moai_place_url_placeholder">http://itmail-okinawa.co.jp</string>
+    <string name="moai_comment">コメント</string>
 
-    </resources>
+</resources>

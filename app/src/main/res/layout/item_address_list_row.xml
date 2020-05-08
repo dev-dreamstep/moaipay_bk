@@ -15,7 +15,7 @@
         android:layout_alignParentLeft="true"
         android:paddingVertical="5dp"
         android:paddingStart="20dp"
-        android:textColor="#3E3E3E"
+        android:textColor="@color/colorMoaiText"
         android:textSize="18sp" />
 
     <TextView

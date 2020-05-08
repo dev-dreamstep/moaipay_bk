@@ -134,7 +134,8 @@ class LoginActivity : AppCompatActivity(), LoginCallback {
             presenter!!.usersListener!!.remove()
         }
 
-        val intent = Intent(this, StartTutorialActivity::class.java)
+//        val intent = Intent(this, StartTutorialActivity::class.java)
+        val intent = Intent(this, ProfileSettingsActivity::class.java)
             .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
         startActivity(intent)
 

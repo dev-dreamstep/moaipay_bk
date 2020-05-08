@@ -56,7 +56,8 @@ class MoaiStartFragment : Fragment() {
 
         // もあい参加ポップアップ
         btnJoin.setOnClickListener {
-            val popupView = layoutInflater.inflate(R.layout.popup_tutorial_moai_join, null)
+//            val popupView = layoutInflater.inflate(R.layout.popup_tutorial_moai_join, null)
+            val popupView = layoutInflater.inflate(R.layout.popup_tutorial_moai_create, null)
             val buttonClose = popupView.findViewById<View>(R.id.btnClose)
             buttonClose.setOnClickListener {
                 if (mPopupWindow.isShowing) {

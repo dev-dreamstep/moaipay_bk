@@ -6,9 +6,11 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.dreamstep.moaipay.R
 import com.dreamstep.moaipay.activity.MainActivity
+import com.dreamstep.moaipay.fragment.chat.ChatFragment
 import com.dreamstep.moaipay.fragment.dummy.DummyFragment
 import com.dreamstep.moaipay.fragment.main.MoaiFragment
 import com.dreamstep.moaipay.fragment.main.MoaiStartFragment
+import com.dreamstep.moaipay.fragment.profile.ProfileSettingsFragment
 import com.dreamstep.moaipay.interfaces.callback.MainTabCallback
 
 private val TAB_TITLES = arrayOf(
@@ -30,29 +32,22 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) :
 
     override fun getItem(position: Int): Fragment {
         val fragment: Fragment
-        val mainTab = context as MainTabCallback
+//        val mainTab = context as MainTabCallback
 
         when(position) {
             0 -> {
-                fragment = MoaiFragment.newInstance()
-                mainTab.changeTitle("チャットルーム")
+                fragment = ChatFragment.newInstance("", "")
             }
             1 -> {
                 when (startFragment) {
                     MainActivity.StartFragment.MOAI_START -> {
                         fragment = MoaiStartFragment.newInstance()
-                        mainTab.changeTitle("もあいペイを始めよう")
                     }
                     else -> fragment = MoaiFragment.newInstance()
                 }
             }
-            4 -> {
-                fragment = DummyFragment()
-                mainTab.changeTitle("チャットルーム")
-            }
             else -> {
-                fragment = MoaiFragment.newInstance()
-                mainTab.changeTitle("もあいペイ")
+                fragment = ProfileSettingsFragment.newInstance()
             }
         }
 
@@ -64,6 +59,6 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) :
     }
 
     override fun getCount(): Int {
-        return TAB_TITLES.size
+        return 3
     }
 }

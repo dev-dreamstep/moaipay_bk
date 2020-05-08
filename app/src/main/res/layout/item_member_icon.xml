@@ -2,14 +2,15 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
     <RelativeLayout
         android:id="@+id/layoutIcon"
         android:layout_width="80dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imgIcon"
@@ -26,7 +27,7 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="bottom"
             android:text="沖縄　花子"
-            android:textColor="#3E3E3E" />
+            android:textColor="@color/colorMoaiText" />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
